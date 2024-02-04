@@ -8,6 +8,31 @@
   box-sizing: border-box;
 }
 
+html.dark {
+  body {
+    background-color: #333;
+    color: #f7f7f7;
+  }
+  .inc-exp-container {
+    background-color: #333;
+    color: #f7f7f7;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .list li {
+    background-color: #333;
+    color: #f7f7f7;
+  }
+  input[type='text'],
+  input[type='number'] {
+    background-color: #333;
+    color: #f7f7f7;
+  }
+}
+
 body {
   background-color: #f7f7f7;
   display: flex;
@@ -90,7 +115,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #2ecc71;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -149,4 +174,28 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+
+.btn-light, .btn-dark {
+  width: 100px;
+  height: 30px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.btn-light {
+  background-color: #333;
+  color: #f7f7f7;
+}
+
+.btn-dark {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }

@@ -3,7 +3,7 @@ import { createApp } from 'vue'
 import Toast from 'vue-toastification'
 import 'vue-toastification/dist/index.css'
 
-import './assets/style.css'
+import './assets/style.scss'
 
 import App from './App.vue'
 

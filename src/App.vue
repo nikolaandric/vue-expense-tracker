@@ -22,9 +22,14 @@ import AddTransaction from './components/AddTransaction.vue';
 
 import { useToast } from 'vue-toastification';
 
+import { useDark, useToggle } from '@vueuse/core';
+
 import { ref, computed, onMounted } from 'vue';
 
 const toast = useToast();
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 
 const transactions = ref([]);
 
